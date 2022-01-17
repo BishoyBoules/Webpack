@@ -1,0 +1,73 @@
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./sass/main.scss ***!
+  \*******************************************************************************************************************************************************************************/
+body {
+  background-color: #eee;
+}
+
+.popup {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popup .popup .popupImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  height: 600px;
+}
+
+#theBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+#theBody #popupContainer {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#theBody .theDiv {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#theBody .theDiv .theImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+#theBody .theDiv .theTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.active {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0%;
+  width: 600px;
+  height: 735px;
+  background-color: #ccc4b1;
+  align-items: center;
+  align-self: center;
+}
+
+.inactive {
+  pointer-events: visible;
+}
