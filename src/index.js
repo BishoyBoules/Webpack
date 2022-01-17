@@ -48,5 +48,4 @@ async function getInfo(url){
             });
         }
 }
-
 getInfo(theUrl);
