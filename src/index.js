@@ -28,6 +28,7 @@ async function getInfo(url){
                 description.innerHTML = `photo-ID: ${item.id},\n
                 Description: ${item.title}`;
                 const popup = document.createElement('div');
+                popup.classList.add('popup');
                 popup.classList.add('active');
                 const popupImage = document.createElement('img');
                 const close = document.createElement('button');
@@ -39,8 +40,12 @@ async function getInfo(url){
                 popup.appendChild(popupImage);
                 popup.appendChild(description);
                 popupContainer.appendChild(popup);
-                theBody.classList.add('inactive');
                 popupContainer.addEventListener('click', () =>{
+                    popupContainer.style.display = "none";
+                    console.log('popup');
+                    popup.remove();
+                });
+                close.addEventListener('click', () =>{
                     popupContainer.style.display = "none";
                     console.log('close');
                     popup.remove();

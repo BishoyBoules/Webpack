@@ -25,11 +25,10 @@ body{
     display: none;
     margin-left: auto;
     margin-right: auto;
-    .popup{
-        .popupImage {
-            @include image();
-            height: 600px;
-        }
+    z-index: 100;
+    .popupImage {
+        @include image();
+        height: 600px;
     }
 }
 
@@ -73,8 +72,4 @@ body{
 
 .active{
     @include popup();
-}
-
-.inactive{
-    pointer-events:visible;
 }
